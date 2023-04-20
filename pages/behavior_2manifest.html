@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Manifest</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header id="header-b2">
+        <div>
+            <h1 class="TB2">
+                Manifest
+            </h1>
+        </div>
+        <ol>
+            <li class="navbar">
+                <a class="TB10"href="../index.html"><h3 class="TB1">Inicio</h3></a>
+                <a href="../pages/behavior_1ic.html"><h3 class="TB1">Introduccion a los pack de comportamiento</h3></a>
+                <a href="../pages/behavior_2manifest.html"><h3 class="TB1">Manifest</h3></a>
+            </li>
+        <ol>
+    </header>
+    <main>
+        <div class="txt">
+            <p class="txt1">
+                El archivo de manifiesto contiene toda la información básica sobre el paquete que Minecraft necesita para identificarlo. Las siguientes tablas contienen todos los componentes del manifiesto, sus propiedades individuales y lo que significan.
+                
+            <p>
+            <p class="txt6">
+                Crea una carpeta
+                En esta sección, crearás una carpeta llamada My_BEHAVIOR_Pack. Bueno, en verdad no tienes que llamarla así. De hecho, puedes darle el nombre que quieras, pero las otras deben tener exactamente el mismo nombre que figura en este tutorial para que Minecraft sepa dónde buscarlas.
+                Abre la carpeta com.mojang.
+                Abre la carpeta development_behavior_packs.
+                Dentro de la carpeta development_behavior_packs, crea una carpeta nueva y llámala My_BEHAVIOR_Pack.
+                Abre la carpeta My_BEHAVIOR_Pack <img src="../assets/img/1..png" class="img-art" alt="">
+            <p>
+            <p class="txt2">Crea el archivo de manifiesto
+
+                Para cargar un pack de comportamiento en Minecraft, tendrás que crear un archivo de manifiesto. El archivo de manifiesto del pack de comportamiento es similar al creado para el pack de recursos, pero tiene dos secciones adicionales.
+                modules: define el pack para que Minecraft sepa cómo aplicarlo en el mundo. Los packs de comportamiento usan el tipo data.
+                dependencies: crea un vínculo entre los packs de comportamiento y los packs de recursos para agregar texturas y elementos visuales personalizados en Minecraft.
+                Crea un documento nuevo en tu carpeta My_BEHAVIOR_Pack y llámalo manifest.json.
+                Deberás cambiar la extensión del archivo de .txt a .json. Si en la ventana del Explorador no se muestran las extensiones de nombre de archivo, puedes habilitarlas en la pestaña Ver. <img src="../assets/img/2.png" class="img-art" alt=""><img src="../assets/img/3.png" class="img-art" alt=""></h3>
+                <p class="txt3">
+                    Introduce UUID
+                    Al igual que en el archivo de manifiesto del pack de recursos, tendrás que generar dos UUID diferentes para las secciones del encabezado y del módulo de tu archivo de manifiesto. Puedes usar un generador de UUID online como https://www.uuidgenerator.net
+                    Copia y pega un UUID en la sección de encabezado. Deberás pegar el UUID en el campo "uuid" entre las comillas ("") para que se lea correctamente.
+                    Actualiza la página web para generar un UUID nuevo que podrás usar en la sección de módulos.
+                    Copia y pega el UUID nuevo en la sección de módulos, en el campo "uuid" entre las comillas. <img src="../assets/img/4.png" class="img-art" alt="">
+                <p>
+                <p class="txt4">
+                    Crea la dependencia
+                    Hay una tercera sección en el archivo manifest.json del pack de comportamiento llamada "dependencias" que se usa para crear un vínculo entre un pack de recursos y un pack de comportamiento. Este vínculo se crea cuando el UUID ubicado en la sección de encabezado del archivo manifest.json del pack de recursos es el mismo que el UUID en la sección de dependencias del archivo manifest.json del pack de comportamiento. No necesitas tener un pack de recursos para usar un pack de comportamiento y viceversa. Si cuentas con ambos, puedes usar esta solución para vincularlos. De este modo, cuando cargues un pack de comportamiento en un mundo, automáticamente se cargará y activará el pack de recursos vinculado con él. <img src="../assets/img/5.png" class="img-art" alt="">
+                <p>
+                <p class="txt5">
+                    Abre el archivo manifest.json ubicado en la carpeta My_RESOURCE_Pack dentro de la carpeta development_resource_packs.
+Copia el UUID de la sección de header del archivo manifest.json del pack de recursos.
+Ve al archivo manifest.json ubicado en la carpeta *My_BEHAVIOR_Pack dentro de la carpeta development_behavior_packs.
+Pega el UUID en el campo "uuid" en la sección de dependencias. Asegúrate de que todo el texto entre comillas coincida exactamente.
+Guarda el archivo manifest.json del pack de comportamiento. <img src="../assets/img/6.png" class="img-art" alt="">
+                <p>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    </main>
+    <footer class="footer">
+        <div class="up">
+            <a href="#header-b2"><img src="../assets/img/flechatop.png" alt=""></a>
+        </div>
+        <section class="redes">
+            <h4 class="h4-1">Visitanós</h4>
+            <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/fb.png" alt="logo de facebook"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="../assets/img/tw.png" alt="logo de twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/ig.png" alt="logo de instagram"></a>
+    </footer>
+    
+</body>
+</html>
